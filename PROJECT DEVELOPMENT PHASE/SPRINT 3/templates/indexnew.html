@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PREDICTION</title>
+
+  </head>
+  <body>
+    <div class="header">
+        <h1>CHRONIC KIDNEY DISEASE PREDICTION</h1>
+        <p>A MACHINE LEARNING WEB APP</p>
+      </div>
+      <div class="link">
+      <form method= "POST" action="{{ url_for('last')}} ">
+        <br>
+        <br>
+        <label>Haemoglobin:</label> <input name="hb"required>
+        <br><br>
+        <label>Specific_Gravity:</label>  <input name="sg"required>
+        <br><br>
+        <label>Red_Blood_Cell_Count:</label> <input name="rbcc"required>
+        <br><br>
+        <label>Albumin:</label> <input name="ab"required>
+        <br><br>
+        <label>Blood_Urea:</label> <input name="bu" required>
+        <br><br>
+        <label>Blood_Pressure:</label> <input name="bp"required>
+        <br><br>
+        <label>Blood_Gulcose_Random:</label> <input name="bgr"required>
+        <br><br>
+        <label>Serum_Creatinine:</label> <input name="sc" required>
+        <br>
+        <br>
+        <br>
+        <button type="submit" value= "submit">PREDICT</button>
+    
+      </form>
+    </div>
+    
+  </body>
+  <style>
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #6e1abc;
+  color: white;
+  font-size: 30px;
+}
+.link{
+  text-align: center;
+  font-family: Verdana;
+  font-weight: bolder;
+}
+button{
+  border-radius: 35%;
+  padding: 17px;
+  border-color: black;
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color:#6e1abc;
+  color: white;
+}
+  </style>
+</html>
